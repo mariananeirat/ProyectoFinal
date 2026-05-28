@@ -69,7 +69,7 @@ class prestamoWindow(CTkToplevel):
         self.lbl_nom.grid(row=2, column=0, padx=20, pady=10, sticky="w")
         
         self.entry_nombre = CTkEntry(self.cuadro_prestamo,
-                                    placeholder_text="Ej. Juan Pérez",
+                                    placeholder_text=" ",
                                     fg_color="white",
                                     border_color="#1a1c43",
                                     width=280)
@@ -83,7 +83,7 @@ class prestamoWindow(CTkToplevel):
         self.lbl_cor.grid(row=3, column=0, padx=20, pady=10, sticky="w")
         
         self.entry_correo = CTkEntry(self.cuadro_prestamo, 
-                                     placeholder_text="Ej. juan@correo.com", 
+                                     placeholder_text=" ...@correo.com", 
                                      fg_color="white", 
                                      border_color="#1a1c43", 
                                      width=280)
@@ -97,7 +97,7 @@ class prestamoWindow(CTkToplevel):
         self.lbl_tel.grid(row=4, column=0, padx=20, pady=10, sticky="w")
         
         self.entry_telefono = CTkEntry(self.cuadro_prestamo, 
-                                       placeholder_text="Ej. 3001234567", 
+                                       placeholder_text=" ", 
                                        fg_color="white", 
                                        border_color="#1a1c43", 
                                        width=280)
@@ -141,7 +141,7 @@ class prestamoWindow(CTkToplevel):
 
         # Validación básica de datos obligatorios
         if nombre == "" or correo == "" or telefono == "":
-            self.lbl_error.configure(text="Por favor, completa todos los campos del lector.")
+            self.lbl_error.configure(text="Datos incompletos, completa todos los campos del lector.")
             return
 
         try:
