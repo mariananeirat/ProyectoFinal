@@ -151,7 +151,7 @@ class GestorPrestamos:
         Devuelve un libro a estado Disponible si se ingresa la clave de administrador correcta.
         Elimina el préstamo activo del registro.
         """
-        if clave_admin == "home26":
+        if clave_admin == "123p":
             # Cambiamos el estado del libro
             libro.cambiar_est("Disponible")
             
